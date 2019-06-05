@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t scotpfleghaar/docker-react -f Dockerfile.docker .
