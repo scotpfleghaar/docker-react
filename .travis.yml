@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t scotpfleghaar/docker-react -f Dockerfile.docker .
+
+script:
+  - docker run scotpfleghaar/docker-react npm run test -- --coverage
